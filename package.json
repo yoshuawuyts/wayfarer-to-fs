@@ -1,0 +1,53 @@
+{
+  "name": "wayfarer-to-fs",
+  "version": "1.0.0",
+  "description": "Save wayfarer-to-server routes to disk",
+  "main": "index.js",
+  "scripts": {
+    "deps": "dependency-check . && dependency-check . --extra --no-dev",
+    "deps:pkg": "ncu",
+    "deps:update": "ncu -a",
+    "test": "standard && npm run deps && NODE_ENV=test node test",
+    "test:cov": "standard && npm run deps && NODE_ENV=test istanbul cover test.js"
+  },
+  "repository": "yoshuawuyts/wayfarer-to-fs",
+  "keywords": [
+    "disk",
+    "wayfarer",
+    "brick",
+    "wayfarer-to-server",
+    "save",
+    "fs",
+    "asset",
+    "bundle",
+    "build",
+    "system",
+    "modular",
+    "http",
+    "simple"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "get-server-port": "^1.0.0",
+    "map-limit": "0.0.1",
+    "mkdirp": "^0.5.1",
+    "nets": "^3.1.0",
+    "noop2": "^2.0.0",
+    "pathname-match": "^1.1.0",
+    "pump": "^1.0.0"
+  },
+  "devDependencies": {
+    "dependency-check": "^2.5.0",
+    "istanbul": "^0.3.19",
+    "npm-check-updates": "^2.2.0",
+    "rimraf": "^2.4.3",
+    "standard": "^5.2.2",
+    "tape": "^4.2.0",
+    "wayfarer": "^5.0.1",
+    "wayfarer-to-server": "^2.0.2"
+  },
+  "files": [
+    "index.js",
+    "bin/*"
+  ]
+}
