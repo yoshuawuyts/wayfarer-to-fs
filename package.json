@@ -44,7 +44,7 @@
     "standard": "^5.2.2",
     "tape": "^4.2.0",
     "wayfarer": "^5.0.1",
-    "wayfarer-to-server": "^2.0.2"
+    "wayfarer-to-server": "^2.1.0"
   },
   "files": [
     "index.js",
