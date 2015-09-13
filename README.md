@@ -32,7 +32,7 @@ toFs(router, __dirname + '/dist', (err) => {
 
 ## API
 ### toFs(router, [dir,] [overrides,] [cb(err)])
-Call all paths on a `wayfarer-to-server` router and write them to a directory.
+Call all paths on a `wayfarer-to-fs` router and write them to a directory.
 `dir` defaults to `./`. An optional `overrides` argument can be passed in to
 rename files:
 ```js
