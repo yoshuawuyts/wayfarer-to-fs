@@ -1,6 +1,6 @@
 {
   "name": "wayfarer-to-fs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Save wayfarer-to-server routes to disk",
   "main": "index.js",
   "scripts": {
