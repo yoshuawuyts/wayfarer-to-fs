@@ -5,7 +5,8 @@
 [![Downloads][downloads-image]][downloads-url]
 [![js-standard-style][standard-image]][standard-url]
 
-Save wayfarer-to-server routes to disk.
+Save wayfarer-to-server routes to disk. Spiritual successor to
+[brick-router](https://github.com/yoshuawuyts/brick-router).
 
 ## Installation
 ```sh
@@ -41,6 +42,17 @@ toFs(router, __dirname + '/dist', overrides, (err) => {
   if (err) throw err
 })
 ```
+
+## Why?
+In development an application usually goes through 3 stages:
+- __experiment__ - some html, css, js to toy around locally
+- __static__ - static files, usually hosted on GitHub pages
+- __server__ - application with a working backend
+
+When switching stages it's common to throw out your build process, and start
+from scratch. `wayfarer-to-fs` allows you to keep the same build process by
+serving files both in-memory (for experimentation and servers) and being able
+to write to the filesystem (for static pages).
 
 ## TODO
 - browserify example
